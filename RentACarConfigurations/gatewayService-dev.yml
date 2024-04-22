@@ -12,7 +12,7 @@ eureka:
 
 spring:
   application:
-    name: gateway-service
+    name: gatewayService
   cloud:
     gateway:
       mvc:
@@ -25,3 +25,4 @@ spring:
           predicates[0]: Path=/eureka/web
           filters[0]: SetPath=/
           uri: http://localhost:9000
+          
